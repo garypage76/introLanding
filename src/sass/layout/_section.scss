@@ -1,0 +1,20 @@
+section {
+    display: grid;
+    position: relative;
+    // overflow: hidden;
+}
+
+.section_right_bg:after {
+    content: '';
+    background-color: var(--purple);
+    left: 50%;
+    width: 50%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+// .section_parallax_lg:after {
+//     height: 150vh;
+// }

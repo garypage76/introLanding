@@ -1,0 +1,35 @@
+.control__list {
+    grid-column: 1 / 11;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(10, 10%);
+    height: 150vh;
+    background-color: var(--purple);
+    @media(min-width: 768px) {
+        height: 100vh;
+    }
+    @media(min-width: 992px) {
+        grid-column: 6 / 11;
+        grid-template-columns: repeat(5, 20%);
+        background-color: transparent;
+    }
+    ul {
+        grid-column: 2 / 10;
+        @media(min-width: 992px) {
+            grid-column: 2 / 5;
+        }
+    }
+    li {
+        padding-left: 55px;
+        position: relative;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateY(200px);
+        span {
+            position: absolute;
+            top: -13px;
+            left: 0;
+            font-size: 36px;
+        }
+    }
+}

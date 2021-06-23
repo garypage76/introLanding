@@ -1,0 +1,7 @@
+.hello {
+    grid-template-columns: repeat(10, 10%);
+    height: 200vh;
+    @media(min-width: 992px) {
+        height: 100vh;
+    }
+}

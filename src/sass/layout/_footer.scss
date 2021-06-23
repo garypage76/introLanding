@@ -1,0 +1,15 @@
+// :: Footer
+.bottom {
+    background-color: var(--purple);
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+    }
+    a {
+        display: block;
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../../abstracts/mixins' as *;
+.hello__text {
+    grid-column: 1 / 11;
+    padding: 0 40px;
+    display: grid;
+    align-items: center;
+    height: 50vh;
+    @media(min-width: 992px) {
+        height: 100vh;
+        grid-column: 2 / 5;
+        padding: 0;
+    }
+    h2 {
+        // font-size: 100px;
+        // font-size: min(12vw, 120px);
+        @include section-head;
+        line-height: 1;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(200px);
+    }
+}

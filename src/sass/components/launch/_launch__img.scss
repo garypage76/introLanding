@@ -1,0 +1,38 @@
+.launch__img {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--purple);
+    grid-column: 1 / 11;
+    grid-row: 2/3;
+    @media(min-width: 992px) {
+        grid-row: 1/2;
+        grid-column: 1 / 6;
+    }
+    img {
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+        @media(min-width: 768px) {
+            bottom: 0;
+        }
+    }
+}
+
+#launch__img__space {
+    bottom: unset;
+    top: -100px;
+    width: 100%;
+    height: calc(100% + 100px);
+    object-fit: cover;
+}
+
+#launch__img__rocket {
+    bottom: 100px;
+    @media(min-width: 768px) {
+        bottom: 20px;
+    }
+}
+
+#launch__img__broken {
+    opacity: 0;
+}

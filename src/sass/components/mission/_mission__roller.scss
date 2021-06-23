@@ -1,0 +1,21 @@
+@use '../../abstracts/mixins' as *;
+.mission__roller {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    grid-column: 2 / 11;
+    height: 100vh;
+    svg {
+        transform: translateX(-300px);
+    }
+    h2 {
+        @include section-head;
+        position: absolute;
+        text-transform: uppercase;
+        width: 15rem;
+        line-height: 1;
+        @media(min-width: 768px) {
+            width: auto;
+        }
+    }
+}

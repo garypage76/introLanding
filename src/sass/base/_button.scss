@@ -1,0 +1,28 @@
+button {
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    border-radius: 5px;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    span {
+        display: block;
+        background: var(--purple-bright);
+        color: white;
+        padding: 1.5rem 2rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        transform: translate3d(-4px, -4px, 0);
+        transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    }
+    &:hover span {
+        transform: translate3d(-8px, -8px, 0);
+    }
+}

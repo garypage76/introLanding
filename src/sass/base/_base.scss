@@ -1,0 +1,44 @@
+body {
+    background-color: var(--bg);
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 20px;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+section {
+    height: 100vh;
+    position: relative;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 20px // font-size: clamp(20px)
+}
+
+a {
+    color: var(--turq);
+}
+
+
+/* a subtle focus style for keyboard-input elements */
+
+.text-input:focus {
+    outline: 1px solid #aaa;
+    /* Adjust to suit your tastes */
+}
+
+
+/* no outline for non-keyboard-inputs elements */
+
+button:focus,
+select:focus {
+    outline: none;
+}
+
+body.user-is-tabbing *:focus {
+    outline: 2px solid #7AACFE !important;
+    /* for non-webkit browsers */
+    outline: 5px auto -webkit-focus-ring-color !important;
+}

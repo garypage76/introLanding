@@ -1,0 +1,56 @@
+.astro__img {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--purple);
+    grid-column: 1 / 11;
+    grid-row: 2 / 3;
+    @media(min-width: 992px) {
+        grid-column: 6 / 11;
+        grid-row: 1 / 2;
+    }
+    img {
+        position: absolute;
+    }
+}
+
+#astro__img__space {
+    top: -100px;
+    width: 100%;
+    height: calc(100% + 100px);
+    object-fit: cover;
+}
+
+#astro__img__astro {
+    z-index: 40;
+    right: 0;
+    bottom: -2px;
+    width: 80vh;
+    @media(min-width: 768px) {
+        width: 100vh;
+    }
+    @media(min-width: 992px) {
+        width: 80vh;
+        // bottom: -100px
+    }
+}
+
+#astro__img__mountains {
+    z-index: 30;
+    bottom: -100px;
+    width: 100%;
+    @media(min-width: 768px) {
+        bottom: -200px;
+    }
+    @media(min-width: 992px) {
+        bottom: -100px;
+    }
+}
+
+#astro__img__planets {
+    z-index: 20;
+    top: -200px;
+    width: 100%;
+    @media(min-width: 992px) {
+        top: 0;
+    }
+}

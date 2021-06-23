@@ -1,0 +1,20 @@
+.control__text {
+    grid-column: 1 / 11;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(10, 10%);
+    height: 100vh;
+    @media(min-width: 992px) {
+        grid-template-columns: repeat(5, 20%);
+        grid-column: 1 / 6;
+        background-color: var(--purple);
+    }
+    p {
+        grid-column: 2 / 10;
+        opacity: 0;
+        transform: translateY(200px);
+        @media(min-width: 992px) {
+            grid-column: 2/5;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../../abstracts/mixins' as *;
+.astro__text {
+    position: relative;
+    z-index: 100;
+    grid-column: 2/10;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100%;
+    @media(min-width: 992px) {
+        grid-column: 2/7;
+        grid-row: 1/2;
+    }
+    h1,
+    h2 {
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: min(5vw, 24px);
+        color: var(--turq);
+    }
+    h1 {
+        text-transform: uppercase;
+        @include section-head;
+    }
+}
